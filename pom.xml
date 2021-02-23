@@ -16,9 +16,9 @@
     <name>${project.artifactId}</name>
 
     <modules>
+        <module>cloud-provider-sample</module>
         <module>cloud-consumer-sample</module>
         <module>cloud-eureka-sample</module>
-        <module>cloud-provider-sample</module>
         <module>cloud-gateway-sample</module>
     </modules>
 
@@ -37,25 +37,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <repositories>
-        <repository>
-            <id>spring-snapshots</id>
-            <name>Spring Snapshots</name>
-            <url>https://repo.spring.io/snapshot</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://repo.spring.io/milestone</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 
     <build>
         <finalName>${project.artifactId}</finalName>
