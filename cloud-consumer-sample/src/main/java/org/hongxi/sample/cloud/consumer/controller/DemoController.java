@@ -1,9 +1,10 @@
 package org.hongxi.sample.cloud.consumer.controller;
 
-import org.hongxi.sample.cloud.consumer.feign.DemoFeign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Mono;
 
 /**
  * Created by shenhongxi on 2017/9/14.
@@ -12,10 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
     @Autowired
-    private DemoFeign demoFeign;
+    private WebClient.Builder webClientBuilder;
 
     @RequestMapping("/hi")
-    public String hi(String name) {
-        return demoFeign.hello(name);
+    public Mono<String> hi(String name) {
+        return webClientBuilder.build()
+                .get()
+                .uri("http://demo-provider/hello?name=" + name)
+                .retrieve()
+                .bodyToMono(String.class);
     }
 }
