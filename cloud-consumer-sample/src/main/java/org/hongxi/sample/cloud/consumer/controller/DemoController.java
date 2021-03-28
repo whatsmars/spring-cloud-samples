@@ -17,9 +17,11 @@ public class DemoController {
 
     @RequestMapping("/hi")
     public Mono<String> hi(String name) {
-        return webClientBuilder.build()
+        return webClientBuilder
+                .baseUrl("http://demo-provider")
+                .build()
                 .get()
-                .uri("http://demo-provider/hello?name=" + name)
+                .uri("/hello?name={name}", name)
                 .retrieve()
                 .bodyToMono(String.class);
     }
