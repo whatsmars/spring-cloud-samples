@@ -13,13 +13,11 @@ import reactor.core.publisher.Mono;
 public class DemoController {
 
     @Autowired
-    private WebClient.Builder webClientBuilder;
+    private WebClient webClient;
 
     @RequestMapping("/hi")
     public Mono<String> hi(String name) {
-        return webClientBuilder
-                .baseUrl("http://demo-provider")
-                .build()
+        return webClient
                 .get()
                 .uri("/hello?name={name}", name)
                 .retrieve()

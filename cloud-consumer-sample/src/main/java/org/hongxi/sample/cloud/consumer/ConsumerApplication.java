@@ -22,4 +22,11 @@ public class ConsumerApplication {
     public WebClient.Builder webClientBuilder() {
         return WebClient.builder();
     }
+
+    @Bean
+    public WebClient webClient(WebClient.Builder webClientBuilder) {
+        return webClientBuilder
+                .baseUrl("http://demo-provider")
+                .build();
+    }
 }
