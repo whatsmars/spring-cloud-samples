@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: config-client-sample
+  cloud:
+    config:
+      name: book
+      profile: prod
+      uri: http://localhost:8080/

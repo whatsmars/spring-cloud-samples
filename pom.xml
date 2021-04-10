@@ -21,6 +21,7 @@
         <module>cloud-eureka-sample</module>
         <module>cloud-gateway-sample</module>
         <module>cloud-config-server-sample</module>
+        <module>cloud-config-client-sample</module>
     </modules>
 
     <properties>
