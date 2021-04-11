@@ -5,4 +5,6 @@ spring:
     config:
       name: book
       profile: prod
-      uri: http://localhost:8080/
+      discovery:
+        enabled: true
+        service-id: config-server-sample
