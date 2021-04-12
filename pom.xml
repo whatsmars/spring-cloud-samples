@@ -22,6 +22,8 @@
         <module>cloud-gateway-sample</module>
         <module>cloud-config-server-sample</module>
         <module>cloud-config-client-sample</module>
+        <module>cloud-provider-sample</module>
+        <module>cloud-consumer-sample</module>
     </modules>
 
     <properties>
