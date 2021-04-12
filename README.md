@@ -2,11 +2,9 @@
 Spring Cloud 生态研究
 
 ### 演示
-依次启动eureka,provider,consumer,gateway <br>
+依次启动eureka,provider-reactive,consumer-reactive,gateway <br>
 1. 直接访问 localhost:8763/hi?name=hongxi
-1. 通过网关访问 localhost:8764/demo-consumer/hi?name=hongxi
-
-依次启动eureka,config-server,config-client <br>
+1. 通过网关访问 localhost:8764/demo-consumer-reactive/hi?name=hongxi
 
 ### Spring Cloud 实现方案
 |               | Spring Cloud Netflix                    | Spring Cloud 官方                                            | Spring Cloud Alibaba | Spring Cloud Consul | Spring Cloud Kubernetes | Spring Cloud Zookeeper |

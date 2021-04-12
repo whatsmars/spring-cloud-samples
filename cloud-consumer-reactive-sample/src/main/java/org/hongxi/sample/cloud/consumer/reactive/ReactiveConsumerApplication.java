@@ -26,7 +26,7 @@ public class ReactiveConsumerApplication {
     @Bean
     public WebClient webClient(WebClient.Builder webClientBuilder) {
         return webClientBuilder
-                .baseUrl("http://demo-provider")
+                .baseUrl("http://demo-provider-reactive")
                 .build();
     }
 }
