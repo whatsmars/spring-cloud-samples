@@ -16,8 +16,8 @@
     <name>${project.artifactId}</name>
 
     <modules>
-        <module>cloud-provider-sample</module>
-        <module>cloud-consumer-sample</module>
+        <module>cloud-provider-reactive-sample</module>
+        <module>cloud-consumer-reactive-sample</module>
         <module>cloud-eureka-sample</module>
         <module>cloud-gateway-sample</module>
         <module>cloud-config-server-sample</module>

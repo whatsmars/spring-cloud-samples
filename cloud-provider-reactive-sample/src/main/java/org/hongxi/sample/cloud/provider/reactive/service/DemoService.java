@@ -1,4 +1,4 @@
-package org.hongxi.sample.cloud.provider.service;
+package org.hongxi.sample.cloud.provider.reactive.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;

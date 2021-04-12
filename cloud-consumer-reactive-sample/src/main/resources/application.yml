@@ -1,6 +1,6 @@
 spring:
   application:
-    name: demo-consumer
+    name: demo-consumer-reactive
 eureka:
   client:
     service-url:

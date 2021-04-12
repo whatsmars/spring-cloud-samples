@@ -1,4 +1,4 @@
-package org.hongxi.sample.cloud.consumer.controller;
+package org.hongxi.sample.cloud.consumer.reactive.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

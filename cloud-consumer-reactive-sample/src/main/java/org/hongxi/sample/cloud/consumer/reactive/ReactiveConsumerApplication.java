@@ -1,4 +1,4 @@
-package org.hongxi.sample.cloud.consumer;
+package org.hongxi.sample.cloud.consumer.reactive;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,9 +12,9 @@ import org.springframework.web.reactive.function.client.WebClient;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ConsumerApplication {
+public class ReactiveConsumerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerApplication.class, args);
+        SpringApplication.run(ReactiveConsumerApplication.class, args);
     }
 
     @Bean

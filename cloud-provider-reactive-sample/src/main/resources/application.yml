@@ -6,4 +6,4 @@ server:
   port: 8762
 spring:
   application:
-    name: demo-provider
+    name: demo-provider-reactive

@@ -1,4 +1,4 @@
-package org.hongxi.sample.cloud.provider;
+package org.hongxi.sample.cloud.provider.reactive;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,8 +9,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ProviderApplication {
+public class ReactiveProviderApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ProviderApplication.class, args);
+        SpringApplication.run(ReactiveProviderApplication.class, args);
     }
 }
